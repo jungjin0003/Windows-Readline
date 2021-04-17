@@ -1,0 +1,29 @@
+﻿  source.c
+I:\Programing\C\readline\readline\source.c(654,31): warning C4090: '=': 'const' 한정자가 서로 다릅니다.
+I:\Programing\C\readline\readline\source.c(662,37): warning C4090: '=': 'const' 한정자가 서로 다릅니다.
+I:\Programing\C\readline\readline\source.c(669,37): warning C4090: '=': 'const' 한정자가 서로 다릅니다.
+I:\Programing\C\readline\readline\source.c(748,31): warning C4090: '=': 'const' 한정자가 서로 다릅니다.
+I:\Programing\C\readline\readline\source.c(758,42): warning C4090: '=': 'const' 한정자가 서로 다릅니다.
+I:\Programing\C\readline\readline\source.c(774,42): warning C4090: '=': 'const' 한정자가 서로 다릅니다.
+I:\Programing\C\readline\readline\source.c(853,40): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+I:\Programing\C\readline\readline\source.c(902,20): warning C4047: '함수': 'int'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+I:\Programing\C\readline\readline\source.c(902,16): warning C4024: '_putch': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+I:\Programing\C\readline\readline\source.c(958,36): warning C4047: '=': 'char'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+I:\Programing\C\readline\readline\source.c(972,40): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+I:\Programing\C\readline\readline\source.c(949,1): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+I:\Programing\C\readline\readline\source.c(1011,36): warning C4047: '=': 'char'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+I:\Programing\C\readline\readline\source.c(1033,40): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+I:\Programing\C\readline\readline\source.c(1002,1): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+I:\Programing\C\readline\readline\source.c(1118,30): warning C4090: '=': 'const' 한정자가 서로 다릅니다.
+I:\Programing\C\readline\readline\source.c(1133,28): warning C4047: '함수': 'int'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+I:\Programing\C\readline\readline\source.c(1133,24): warning C4024: '_putch': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+I:\Programing\C\readline\readline\source.c(1163,44): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+I:\Programing\C\readline\readline\source.c(1237,36): warning C4047: '함수': 'int'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+I:\Programing\C\readline\readline\source.c(1237,32): warning C4024: '_putch': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+I:\Programing\C\readline\readline\source.c(1240,44): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+I:\Programing\C\readline\readline\source.c(1252,32): warning C4047: '함수': 'int'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+I:\Programing\C\readline\readline\source.c(1252,28): warning C4024: '_putch': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+I:\Programing\C\readline\readline\source.c(1261,37): warning C4047: '=': 'int'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+I:\Programing\C\readline\readline\source.c(1265,44): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+I:\Programing\C\readline\readline\source.c(737): warning C4716: 'AddChildCommand': 값을 반환해야 합니다.
+  readline.vcxproj -> I:\Programing\C\readline\x64\Debug\readline.exe

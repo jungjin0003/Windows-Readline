@@ -1,0 +1,2698 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'ReadLine_CS'이(가) '0'일 수 있습니다.  이 경우 'InitializeCriticalSection' 함수의 사양과 일치하지 않습니다. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 9,
+                  "endLine": 20,
+                  "endColumn": 35
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "Lock",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 17,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 19,
+                            "startColumn": 21
+                          }
+                        },
+                        "message": {
+                          "text": "'ReadLine_CS'은(는) NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "선언"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 20,
+                            "startColumn": 34
+                          }
+                        },
+                        "message": {
+                          "text": "'ReadLine_CS'은(는) 'InitializeCriticalSection'(c:\\program files (x86)\\windows kits\\10\\include\\10.0.18362.0\\um\\synchapi.h:123에서 선언됨)에 대한 In/Out 인수입니다."
+                        }
+                      },
+                      "kinds": [
+                        "선언"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 20,
+                            "startColumn": 34
+                          }
+                        },
+                        "message": {
+                          "text": "'ReadLine_CS'은(는) NULL(이)면 안 됩니다. 이는 'InitializeCriticalSection'의 SAL 주석과 일치하지 않습니다."
+                        }
+                      },
+                      "kinds": [
+                        "사용법"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'ReadLine_CS'이(가) '0'일 수 있습니다.  이 경우 'EnterCriticalSection' 함수의 사양과 일치하지 않습니다. 이 오류가 발생할 수 있는 이전 위치는 줄 20을(를) 참조하십시오."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 5,
+                  "endLine": 22,
+                  "endColumn": 26
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "Lock",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 17,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 19,
+                            "startColumn": 21
+                          }
+                        },
+                        "message": {
+                          "text": "'ReadLine_CS'은(는) NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "선언"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 20,
+                            "startColumn": 34
+                          }
+                        },
+                        "message": {
+                          "text": "'ReadLine_CS'은(는) 'InitializeCriticalSection'(c:\\program files (x86)\\windows kits\\10\\include\\10.0.18362.0\\um\\synchapi.h:123에서 선언됨)에 대한 In/Out 인수입니다."
+                        }
+                      },
+                      "kinds": [
+                        "선언"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 25
+                          }
+                        },
+                        "message": {
+                          "text": "'ReadLine_CS'은(는) 'EnterCriticalSection'(c:\\program files (x86)\\windows kits\\10\\include\\10.0.18362.0\\um\\synchapi.h:133에서 선언됨)에 대한 In/Out 인수입니다."
+                        }
+                      },
+                      "kinds": [
+                        "선언"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 25
+                          }
+                        },
+                        "message": {
+                          "text": "'ReadLine_CS'은(는) NULL(이)면 안 됩니다. 이는 'EnterCriticalSection'의 SAL 주석과 일치하지 않습니다."
+                        }
+                      },
+                      "kinds": [
+                        "사용법"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "NULL 포인터 'temp'을(를) 역참조하고 있습니다. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 9,
+                  "endLine": 42,
+                  "endColumn": 26
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AddCommand",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 38,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 39,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 41,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "'temp'은(는) NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "선언"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 42,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "'temp'이(가) 역참조되었지만 여전히 NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "사용법"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "NULL 포인터 'temp->NextNode'을(를) 역참조하고 있습니다. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 9,
+                  "endLine": 49,
+                  "endColumn": 36
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AddCommand",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 38,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 39,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 46,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 48,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "'temp->NextNode'은(는) NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "선언"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "index": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 49,
+                            "startColumn": 34
+                          }
+                        },
+                        "message": {
+                          "text": "'temp->NextNode'이(가) 역참조되었지만 여전히 NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "사용법"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "NULL 포인터 'NewCommand'을(를) 역참조하고 있습니다. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                },
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 9,
+                  "endLine": 55,
+                  "endColumn": 32
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AddCommand",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 38,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 39,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 46,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 54,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "'NewCommand'은(는) NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "선언"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "index": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 55,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "'NewCommand'이(가) 역참조되었지만 여전히 NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "사용법"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "NULL 포인터 'temp'을(를) 역참조하고 있습니다. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                },
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 9,
+                  "endLine": 74,
+                  "endColumn": 23
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AddHistory",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 69,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 71,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 73,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "'temp'은(는) NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "선언"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 74,
+                            "startColumn": 21
+                          }
+                        },
+                        "message": {
+                          "text": "'temp'이(가) 역참조되었지만 여전히 NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "사용법"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "NULL 포인터 'temp->Blink'을(를) 역참조하고 있습니다. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                },
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 13,
+                  "endLine": 100,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AddHistory",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 69,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 71,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 79,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 92,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 94,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 5,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 92,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 6,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 97,
+                            "startColumn": 43
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 7,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 99,
+                            "startColumn": 25
+                          }
+                        },
+                        "message": {
+                          "text": "'temp->Blink'은(는) NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "선언"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "index": 8,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 100,
+                            "startColumn": 32
+                          }
+                        },
+                        "message": {
+                          "text": "'temp->Blink'이(가) 역참조되었지만 여전히 NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "사용법"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'buffer'이(가) '0'일 수 있습니다.  이 경우 'strcpy' 함수의 사양과 일치하지 않습니다. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                },
+                "region": {
+                  "startLine": 157,
+                  "startColumn": 13,
+                  "endLine": 157,
+                  "endColumn": 44
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "GetHistory",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 111,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 112,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 114,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 118,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 133,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 5,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 149,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 6,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 155,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 7,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 156,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "'buffer'은(는) NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "선언"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "index": 8,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 157,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "'buffer'은(는) 'strcpy'(c:\\program files (x86)\\windows kits\\10\\include\\10.0.18362.0\\ucrt\\string.h:133에서 선언됨)에 대한 In/Out 인수입니다."
+                        }
+                      },
+                      "kinds": [
+                        "선언"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 9,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 157,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "'buffer'은(는) NULL(이)면 안 됩니다. 이는 'strcpy'의 SAL 주석과 일치하지 않습니다."
+                        }
+                      },
+                      "kinds": [
+                        "사용법"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "NULL 포인터 'str'을(를) 역참조하고 있습니다. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                },
+                "region": {
+                  "startLine": 241,
+                  "startColumn": 13,
+                  "endLine": 241,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "save",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 177,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 178,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 179,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 181,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "'str'은(는) NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "선언"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "index": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 218,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('ch==8'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "분기"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 5,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 238,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 6,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 239,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "이 루프 시작, ('i<x' 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "분기"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 7,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 241,
+                            "startColumn": 23
+                          }
+                        },
+                        "message": {
+                          "text": "'str'이(가) 역참조되었지만 여전히 NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "사용법"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "NULL 포인터 'newstr'을(를) 역참조하고 있습니다. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                },
+                "region": {
+                  "startLine": 243,
+                  "startColumn": 9,
+                  "endLine": 243,
+                  "endColumn": 21
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "save",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 177,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 178,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 179,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 181,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 218,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 5,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 238,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "'newstr'은(는) NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "선언"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "index": 6,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 239,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 7,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 243,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "'newstr'이(가) 역참조되었지만 여전히 NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "사용법"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6386",
+          "message": {
+            "text": "'newstr'에 쓰는 동안 버퍼 오버런이 발생했습니다.  쓰기 가능한 크기는 '_Param_(1)*_Param_(2)'바이트인데 실제로는 '3'바이트만 쓸 수 있습니다."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                },
+                "region": {
+                  "startLine": 243,
+                  "startColumn": 9,
+                  "endLine": 243,
+                  "endColumn": 21
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "save",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 177,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 178,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 179,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 181,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 218,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 5,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 238,
+                            "startColumn": 16
+                          }
+                        },
+                        "message": {
+                          "text": "'newstr'이(가) 배열입니다."
+                        }
+                      },
+                      "kinds": [
+                        "선언"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "index": 6,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 239,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "이 루프 시작, ('i<x' 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "분기"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 7,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 241,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 8,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 239,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 9,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 239,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "이 루프 계속, ('i<x' 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "분기"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 10,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 241,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 11,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 239,
+                            "startColumn": 24
+                          }
+                        },
+                        "message": {
+                          "text": "'i'이(가) 2과(와) 같을 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "선언"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "index": 12,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 239,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "이 루프 종료, ('i<x'이(가) false임)"
+                        }
+                      },
+                      "kinds": [
+                        "분기"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 13,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 243,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "'newstr[2]'에 쓰기가 잘못됨, (쓰기 가능한 범위는 0에서 1 사이임)"
+                        }
+                      },
+                      "kinds": [
+                        "사용법"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'input'이(가) '0'일 수 있습니다.  이 경우 'strncmp' 함수의 사양과 일치하지 않습니다. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                },
+                "region": {
+                  "startLine": 280,
+                  "startColumn": 17,
+                  "endLine": 280,
+                  "endColumn": 54
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "Relation",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 273,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 275,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 277,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "'input'은(는) NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "선언"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 280,
+                            "startColumn": 51
+                          }
+                        },
+                        "message": {
+                          "text": "'input'은(는) 'strncmp'(c:\\program files (x86)\\windows kits\\10\\include\\10.0.18362.0\\ucrt\\string.h:275에서 선언됨)에 대한 입력입니다."
+                        }
+                      },
+                      "kinds": [
+                        "사용법"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 280,
+                            "startColumn": 51
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "분기"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 5,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 280,
+                            "startColumn": 51
+                          }
+                        },
+                        "message": {
+                          "text": "'input'은(는) NULL(이)면 안 됩니다. 이는 'strncmp'의 SAL 주석과 일치하지 않습니다."
+                        }
+                      },
+                      "kinds": [
+                        "사용법"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'str'이(가) '0'일 수 있습니다.  이 경우 'strcpy' 함수의 사양과 일치하지 않습니다. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                },
+                "region": {
+                  "startLine": 308,
+                  "startColumn": 21,
+                  "endLine": 308,
+                  "endColumn": 39
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "AutoComplete",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 292,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 293,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 294,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 300,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 303,
+                            "startColumn": 51
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 5,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 305,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "index": 6,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 307,
+                            "startColumn": 25
+                          }
+                        },
+                        "message": {
+                          "text": "'str'은(는) NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "선언"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "index": 7,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 308,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "'str'은(는) 'strcpy'(c:\\program files (x86)\\windows kits\\10\\include\\10.0.18362.0\\ucrt\\string.h:133에서 선언됨)에 대한 In/Out 인수입니다."
+                        }
+                      },
+                      "kinds": [
+                        "선언"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "index": 8,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 308,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "'str'은(는) NULL(이)면 안 됩니다. 이는 'strcpy'의 SAL 주석과 일치하지 않습니다."
+                        }
+                      },
+                      "kinds": [
+                        "사용법"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26115",
+          "message": {
+            "text": "'readline' 함수에서 '*ReadLine_CS' 잠금을 해제하지 못합니다."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                },
+                "region": {
+                  "startLine": 461,
+                  "startColumn": 17,
+                  "endLine": 461,
+                  "endColumn": 24
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "readline",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "index": 0,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 352,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 1,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 354,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 2,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 360,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 3,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 360,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 4,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 361,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 5,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 362,
+                            "startColumn": 7
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 6,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 363,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 7,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 363,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 8,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 364,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 9,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 367,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 10,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 368,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 11,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 370,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 12,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 370,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 13,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 370,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 14,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 371,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 15,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 372,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 16,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 566,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 17,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 567,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 18,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 567,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 19,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 568,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 20,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 569,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 21,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 570,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 22,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 571,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 23,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 573,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 24,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 368,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 25,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 370,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 26,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 370,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 27,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 370,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 28,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 371,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 29,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 372,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 30,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 456,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 31,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 458,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 32,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 459,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 33,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 460,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    },
+                    {
+                      "index": 34,
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+                          },
+                          "region": {
+                            "startLine": 461,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "important"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.28.29334.0"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x86\\c1.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00F8B1D0 -il C:\\Users\\Recovery\\AppData\\Local\\Temp\\_CL_81c30cfcast -typedil -f source.c -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1928 -D_MSC_FULL_VER=192829334 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -FoDebug\\source.obj -FdDebug\\vc142.pdb -Gd -analyze:projectdirectory I:\\Programing\\C\\readline\\readline -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///I:/Programing/C/readline/readline/source.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///i:/programing/c/readline/readline/readline.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        }
+      ]
+    }
+  ]
+}
